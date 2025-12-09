@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theo’s Food Trailer Menu</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="food-trailer.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Theo’s Food Trailer</h1>
+    <nav>
+      <a href="index.html" aria-current="page">Menu</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Intro -->
+    <section class="menu-hero">
+      <h2>Fresh • Fast • Made with Love</h2>
+      <p>Open Wed–Sun • 11:00 AM – 7:00 PM • Louisville, KY</p>
+
+      <!-- Quick filters -->
+      <div class="filters" role="toolbar" aria-label="Filter menu">
+        <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="meals">Meals</button>
+        <button class="filter-btn" data-filter="sides">Sides</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <input id="menuSearch" type="search" placeholder="Search (e.g., brisket, vegan)" aria-label="Search menu" />
+      </div>
+    </section>
+
+    <!-- Menu Grid -->
+    <section aria-labelledby="menu-heading">
+      <h2 id="menu-heading" class="sr-only">Menu Items</h2>
+
+      <div id="menuGrid" class="menu-grid">
+        <!-- Meals -->
+        <article class="menu-card" data-category="meals" data-tags="bbq beef gluten-free">
+          <header>
+            <h3>BBQ Brisket Sandwich</h3>
+            <span class="price">$12</span>
+          </header>
+          <p>Slow-smoked brisket on a toasted bun, house BBQ sauce, pickles.</p>
+          <ul class="badges"><li>GF</li></ul>
+        </article>
+
+        <article class="menu-card" data-category="meals" data-tags="chicken spicy">
+          <header>
+            <h3>Nashville Hot Chicken</h3>
+            <span class="price">$11</span>
+          </header>
+          <p>Crispy chicken, hot oil, slaw, pickles.</p>
+          <ul class="badges"><li>Spicy</li></ul>
+        </article>
+
+        <!-- Sides -->
+        <article class="menu-card" data-category="sides" data-tags="fries vegetarian shareable">
+          <header>
+            <h3>Loaded Fries</h3>
+            <span class="price">$8</span>
+          </header>
+          <p>Hand-cut fries, cheese sauce, green onion (+$2 brisket).</p>
+          <ul class="badges"><li>Veg</li></ul>
+        </article>
+
+        <article class="menu-card" data-category="sides" data-tags="vegan vegetarian">
+          <header>
+            <h3>Street Corn Cup</h3>
+            <span class="price">$5</span>
+          </header>
+          <p>Roasted corn, lime crema, cotija, chili dust.</p>
+          <ul class="badges"><li>Veg</li></ul>
+        </article>
+
+        <!-- Drinks -->
+        <article class="menu-card" data-category="drinks" data-tags="lemonade fresh">
+          <header>
+            <h3>Fresh Lemonade</h3>
+            <span class="price">$4</span>
+          </header>
+          <p>Hand-squeezed, lightly sweetened.</p>
+          <ul class="badges"><li>House</li></ul>
+        </article>
+
+        <article class="menu-card" data-category="drinks" data-tags="tea unsweet">
+          <header>
+            <h3>Sweet / Unsweet Tea</h3>
+            <span class="price">$3</span>
+          </header>
+          <p>Brewed daily.</p>
+          <ul class="badges"><li>Refill</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section class="menu-notes">
+      <p><strong>Allergies?</strong> Ask about nuts, dairy, and gluten-friendly swaps.</p>
+      <p><em>Prices include tax.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Theo’s Food Trailer • @theosfoodtrailer
+  </footer>
+
+  <script src="food-trailer.js" defer></script>
+</body>
+</html>
