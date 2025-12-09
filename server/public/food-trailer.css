@@ -1,4 +1,40 @@
 /* Visually hide but keep for screen readers */
+
+/* === Food Trailer Image Styling (with Fade-In) === */
+.menu-image {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Fade-in animation */
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Subtle zoom and shadow on hover */
+.menu-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* === Keyframes for Fade-in Animation === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
@@ -85,3 +121,22 @@
   .menu-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .menu-card { break-inside: avoid; border: 1px solid #ddd; box-shadow: none; }
 }
+
+/* === Circular Profile Image Override === */
+.menu-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.menu-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
