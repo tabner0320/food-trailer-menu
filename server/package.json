@@ -1,0 +1,16 @@
+{
+  "name": "food-trailer",
+  "version": "1.0.0",
+  "description": "Theo’s Food Trailer Menu project using Node.js and Express",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "Theo Abner",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
