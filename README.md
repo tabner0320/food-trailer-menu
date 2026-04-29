@@ -1,4 +1,4 @@
-# 🛻 Theo’s Food Trailer Menu
+
 
 A full-stack Node.js and Express project showcasing a **dynamic menu application** for Theo’s Food Trailer.  
 This web app displays menu items fetched from a server-side API (`/api/menu`), supports category filtering, live searching, and demonstrates responsive front-end design.
