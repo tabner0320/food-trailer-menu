@@ -69,3 +69,15 @@ npx nodemon server/server.js
 Open:
 
 http://localhost:3000
+
+## What did you learn from this project?
+
+This project helped me learn how to build a full-stack application using ASP.NET Core Minimal APIs, C#, JavaScript, and Node.js. I gained experience creating REST endpoints, consuming APIs with HttpClient, implementing asynchronous programming with async and await, and organizing a multi-project solution. I also learned how to write automated tests using xUnit and use Git and GitHub for source control.
+
+## What did you learn from this course?
+
+Throughout this course, I learned object-oriented programming concepts, software design principles, API development, automated testing, debugging techniques, and version control practices. I also improved my ability to build and deploy applications using the .NET ecosystem and gained confidence working with real-world software development tools.
+
+## If you had more time, what would you have done differently or what additional features would you have added?
+
+If I had more time, I would add a database to persist menu items instead of using JSON files, implement full CRUD functionality, add user authentication and authorization, create an administrative dashboard for menu management, and deploy the application to a cloud hosting platform. I would also improve the user interface with a modern JavaScript framework and add online ordering capabilities.
