@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Theo\\Desktop\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj": {}
+    "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Theo\\Desktop\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj": {
+    "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Theo\\Desktop\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj",
+        "projectUniqueName": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj",
         "projectName": "FoodTrailerMenu.Console",
-        "projectPath": "C:\\Users\\Theo\\Desktop\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj",
+        "projectPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Console\\FoodTrailerMenu.Console.csproj",
         "packagesPath": "C:\\Users\\Theo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Theo\\Desktop\\food-trailer-menu\\FoodTrailerMenu.Console\\obj\\",
+        "outputPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Theo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.108/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.109/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

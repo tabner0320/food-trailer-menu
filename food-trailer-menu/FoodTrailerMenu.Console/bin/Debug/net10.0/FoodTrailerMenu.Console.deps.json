@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "FoodTrailerMenu.Console/1.0.0": {
+        "runtime": {
+          "FoodTrailerMenu.Console.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FoodTrailerMenu.Console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

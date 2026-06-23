@@ -18,4 +18,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FoodTrailerMenu.Api\FoodTrailerMenu.Api.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f32I12krt1o=",
+  "dgSpecHash": "dOmA1e1Jzsc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Theo\\Desktop\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj",
+  "projectFilePath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Theo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
     "C:\\Users\\Theo\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
