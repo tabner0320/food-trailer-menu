@@ -141,11 +141,6 @@ Through this project I gained experience with:
 
 **Theophilus Abner**
 
-- GitHub: https://github.com/tabner0320
-- LinkedIn: *(Add your LinkedIn profile URL here)*
+GitHub: https://github.com/tabner0320
 
----
-
-##  License
-
-This project is for educational and portfolio purposes.
+Repository: https://github.com/tabner0320/food-trailer-menu
