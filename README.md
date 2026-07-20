@@ -1,104 +1,79 @@
 # Theo's Food Trailer Menu
 
-## Overview
-
-Theo's Food Trailer Menu is a full-stack application built with ASP.NET Core, C#, Node.js, and JavaScript. The project provides a REST API, a console client, and a responsive web interface for viewing and managing food trailer menu items.
-
-This project demonstrates software development concepts including API development, asynchronous programming, automated testing, and front-end web development.
+A full-stack food trailer menu application built with **ASP.NET Core**, **C#**, and **JavaScript**. This project demonstrates REST API development, asynchronous programming, automated integration testing, and a responsive front-end interface.
 
 ---
 
 ## Features
 
-* REST API built with ASP.NET Core Minimal API
-* Console application that consumes the API using HttpClient
-* Asynchronous programming with `async` and `await`
-* Automated testing using xUnit
-* Dynamic menu rendering with JavaScript
-* Category filtering and search functionality
-* Responsive mobile-friendly design
-* JSON-based menu data storage
-* CRUD operations for menu management
+- RESTful API built with ASP.NET Core Minimal API
+- Full CRUD operations (Create, Read, Update, Delete)
+- Console application that consumes the API using HttpClient
+- Asynchronous programming with `async` and `await`
+- Integration testing with xUnit and WebApplicationFactory
+- Dynamic menu rendering with JavaScript
+- Category filtering
+- Live search
+- Responsive mobile-friendly design
+- JSON-based menu storage
 
 ---
 
 ## Technologies Used
 
-| Layer           | Technology               |
-| --------------- | ------------------------ |
-| Front-end       | HTML5, CSS3, JavaScript  |
-| Back-end        | ASP.NET Core Minimal API |
-| Language        | C#                       |
-| API Consumption | HttpClient, async/await  |
-| Testing         | xUnit                    |
-| Tools           | Git, GitHub, VS Code     |
-| Web Server      | Node.js, Express.js      |
+| Category | Technology |
+|----------|------------|
+| Language | C# |
+| Framework | .NET 10 |
+| Backend | ASP.NET Core Minimal API |
+| Frontend | HTML5, CSS3, JavaScript |
+| API Client | HttpClient |
+| Testing | xUnit |
+| Version Control | Git & GitHub |
+| Editor | Visual Studio Code |
+| Data Storage | JSON |
 
 ---
 
-## Project Structure
+##  Project Structure
 
-```text
-FoodTrailerMenu.Api
-FoodTrailerMenu.Console
-FoodTrailerMenu.Tests
+```
+FoodTrailerMenu.Api/
+FoodTrailerMenu.Console/
+FoodTrailerMenu.Tests/
+README.md
+FoodTrailerMenu.slnx
 ```
 
-### FoodTrailerMenu.Api
-
-Provides REST API endpoints for managing menu items.
-
-### FoodTrailerMenu.Console
-
-Consumes the API and displays menu data using a C# console application.
-
-### FoodTrailerMenu.Tests
-
-Contains automated unit tests built with xUnit.
-
 ---
 
-## API Endpoints
+## Getting Started
 
-| Method | Endpoint            | Description           |
-| ------ | ------------------- | --------------------- |
-| GET    | /api/menuitems      | Get all menu items    |
-| GET    | /api/menuitems/{id} | Get a menu item by ID |
-| POST   | /api/menuitems      | Create a menu item    |
-| PUT    | /api/menuitems/{id} | Update a menu item    |
-| DELETE | /api/menuitems/{id} | Delete a menu item    |
-
----
-
-## How to Build
+### Clone the repository
 
 ```bash
-dotnet build
+git clone https://github.com/tabner0320/food-trailer-menu.git
 ```
 
----
-
-## Run the ASP.NET Core API
+### Navigate to the project
 
 ```bash
-dotnet run --project FoodTrailerMenu.Api --urls http://localhost:5000
+cd food-trailer-menu
 ```
 
-Open:
+### Run the API
 
-```text
-http://localhost:5000/swagger
+```bash
+dotnet run --project FoodTrailerMenu.Api
 ```
 
-or
-
-```text
-http://localhost:5000/api/menuitems
-```
+The API will start on the configured localhost port.
 
 ---
 
-## Run the Console Application
+## Run the Console Client
+
+With the API running in another terminal:
 
 ```bash
 dotnet run --project FoodTrailerMenu.Console
@@ -106,92 +81,71 @@ dotnet run --project FoodTrailerMenu.Console
 
 ---
 
-## Run Automated Tests
+##  Run the Tests
 
 ```bash
 dotnet test
 ```
 
-### Current Test Results
+Current Results:
 
-* Total Tests: 5
-* Passed: 5
-* Failed: 0
-
----
-
-## Run the Node.js Web Application
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the server:
-
-```bash
-node server/server.js
-```
-
-Or use Nodemon:
-
-```bash
-npx nodemon server/server.js
-```
-
-Open:
-
-```text
-http://localhost:3000
-```
+- ✅ 13 Tests Passed
+- ❌ 0 Failed
+- ⏭ 0 Skipped
 
 ---
 
-## Sample Menu Item
+## API Endpoints
 
-```json
-{
-  "id": 1,
-  "name": "Burger",
-  "category": "Entree",
-  "price": 9.99,
-  "isAvailable": true
-}
-```
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/menu` | Get all menu items |
+| GET | `/api/menu/{id}` | Get menu item by ID |
+| POST | `/api/menu` | Create a new menu item |
+| PUT | `/api/menu/{id}` | Update a menu item |
+| DELETE | `/api/menu/{id}` | Delete a menu item |
 
 ---
 
-## What Did You Learn From This Project?
+## 📸 Future Improvements
 
-This project helped me learn how to build a full-stack application using ASP.NET Core Minimal APIs, C#, JavaScript, and Node.js. I gained experience creating REST endpoints, consuming APIs with HttpClient, implementing asynchronous programming with async and await, and organizing a multi-project solution. I also learned how to write automated tests using xUnit and use Git and GitHub for source control.
-
----
-
-## What Did You Learn From This Course?
-
-Throughout this course, I learned object-oriented programming concepts, software design principles, API development, automated testing, debugging techniques, and version control practices. I improved my ability to build and deploy applications using the .NET ecosystem and gained confidence working with real-world software development tools.
-
----
-
-## What Would You Add With More Time?
-
-If I had more time, I would:
-
-* Connect the application to a SQL Server or SQLite database
-* Add user authentication and authorization
-* Create an administrative dashboard for menu management
-* Deploy the application to a cloud platform such as Azure
-* Improve the user interface using a modern JavaScript framework
-* Add online ordering and checkout functionality
-* Add additional automated integration tests
+- Database integration with SQL Server
+- Entity Framework Core
+- User authentication and authorization
+- Admin dashboard
+- Image uploads for menu items
+- Docker support
+- Azure deployment
+- Swagger customization
 
 ---
 
-## Author
+## What I Learned
+
+Through this project I gained experience with:
+
+- Designing RESTful APIs
+- ASP.NET Core Minimal APIs
+- HTTP status codes
+- CRUD operations
+- Asynchronous programming
+- HttpClient
+- Integration testing using xUnit
+- Git and GitHub workflows
+- Repository organization and cleanup
+- Building maintainable C# applications
+
+---
+
+##  Author
 
 **Theophilus Abner**
 
-GitHub: https://github.com/tabner0320
+- GitHub: https://github.com/tabner0320
+- LinkedIn: *(Add your LinkedIn profile URL here)*
 
-Repository: https://github.com/tabner0320/food-trailer-menu
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
