@@ -146,6 +146,6 @@ Through this project I gained experience with:
 
 ---
 
-## 📄 License
+##  License
 
 This project is for educational and portfolio purposes.
