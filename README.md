@@ -107,7 +107,7 @@ Current Results:
 
 ---
 
-## 📸 Future Improvements
+##  Future Improvements
 
 - Database integration with SQL Server
 - Entity Framework Core
