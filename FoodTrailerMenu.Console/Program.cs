@@ -6,7 +6,7 @@ Console.WriteLine("================================");
 
 using HttpClient client = new()
 {
-    BaseAddress = new Uri("http://localhost:5000")
+    BaseAddress = new Uri("http://localhost:5041")
 };
 
 bool isRunning = true;
@@ -57,7 +57,7 @@ while (isRunning)
     catch (HttpRequestException ex)
     {
         Console.WriteLine("Could not connect to the API.");
-        Console.WriteLine("Make sure the API is running on http://localhost:5000.");
+        Console.WriteLine("Make sure the API is running on http://localhost:5041.");
         Console.WriteLine($"Error: {ex.Message}");
     }
 

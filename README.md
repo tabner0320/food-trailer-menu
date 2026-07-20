@@ -64,7 +64,7 @@ cd food-trailer-menu
 ### Run the API
 
 ```bash
-dotnet run --project FoodTrailerMenu.Api
+dotnet run --project FoodTrailerMenu.Api --urls http://localhost:5000
 ```
 
 The API will start on the configured localhost port.
