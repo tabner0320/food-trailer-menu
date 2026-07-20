@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj": {}
+    "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj": {
+    "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj",
         "projectName": "FoodTrailerMenu.Api",
-        "projectPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj",
+        "projectPath": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj",
         "packagesPath": "C:\\Users\\Theo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\obj\\",
+        "outputPath": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Theo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.109/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.110/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -486,14 +486,14 @@
         }
       }
     },
-    "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj": {
+    "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj",
         "projectName": "FoodTrailerMenu.Tests",
-        "projectPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj",
+        "projectPath": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\FoodTrailerMenu.Tests.csproj",
         "packagesPath": "C:\\Users\\Theo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Theo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -508,8 +508,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj": {
-                "projectPath": "C:\\Users\\Theo\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj"
+              "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj": {
+                "projectPath": "C:\\Users\\Theo\\OneDrive\\Desktop\\vscode projects\\food-trailer-menu\\FoodTrailerMenu.Api\\FoodTrailerMenu.Api.csproj"
               }
             }
           }
@@ -530,9 +530,13 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[10.0.10, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.14.1, )"
+              "version": "[18.8.1, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -543,8 +547,10 @@
               "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -563,7 +569,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.109/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.110/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

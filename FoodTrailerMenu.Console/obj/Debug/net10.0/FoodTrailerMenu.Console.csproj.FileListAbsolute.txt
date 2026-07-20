@@ -13,3 +13,33 @@ C:\Users\Theo\Desktop\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.
 C:\Users\Theo\Desktop\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.pdb
 C:\Users\Theo\Desktop\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.genruntimeconfig.cache
 C:\Users\Theo\Desktop\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\ref\FoodTrailerMenu.Console.dll
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.exe
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.deps.json
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.runtimeconfig.json
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.dll
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.pdb
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.AssemblyInfoInputs.cache
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.AssemblyInfo.cs
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.csproj.CoreCompileInputs.cache
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.sourcelink.json
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.dll
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\refint\FoodTrailerMenu.Console.dll
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.pdb
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.genruntimeconfig.cache
+C:\Users\Theo\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\ref\FoodTrailerMenu.Console.dll
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.exe
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.deps.json
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.runtimeconfig.json
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.dll
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\bin\Debug\net10.0\FoodTrailerMenu.Console.pdb
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.AssemblyInfoInputs.cache
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.AssemblyInfo.cs
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.csproj.CoreCompileInputs.cache
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.sourcelink.json
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.dll
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\refint\FoodTrailerMenu.Console.dll
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.pdb
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\FoodTrailerMenu.Console.genruntimeconfig.cache
+C:\Users\Theo\OneDrive\Desktop\vscode projects\food-trailer-menu\FoodTrailerMenu.Console\obj\Debug\net10.0\ref\FoodTrailerMenu.Console.dll

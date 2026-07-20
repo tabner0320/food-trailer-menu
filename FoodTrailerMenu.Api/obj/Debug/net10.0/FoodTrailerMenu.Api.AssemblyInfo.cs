@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodTrailerMenu.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0981dc35b9592b80d138d953be0951e58e6fb8ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f3f487bef9f27d39b54d1930dc95dd4d38050ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodTrailerMenu.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodTrailerMenu.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

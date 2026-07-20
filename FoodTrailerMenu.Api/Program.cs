@@ -25,12 +25,12 @@ List<MenuItem> menuItems = new()
 
 app.MapGet("/api/menu", () =>
 {
-    return menuItems;
+    return Results.Ok(menuItems);
 });
 
 app.MapGet("/api/menu/{id}", (int id) =>
 {
-    var item = menuItems.FirstOrDefault(x => x.Id == id);
+    MenuItem? item = menuItems.FirstOrDefault(x => x.Id == id);
 
     if (item == null)
     {
@@ -42,6 +42,15 @@ app.MapGet("/api/menu/{id}", (int id) =>
 
 app.MapPost("/api/menu", (MenuItem item) =>
 {
+    bool idAlreadyExists = menuItems.Any(x => x.Id == item.Id);
+
+    if (idAlreadyExists)
+    {
+        return Results.Conflict(
+            $"A menu item with ID {item.Id} already exists."
+        );
+    }
+
     menuItems.Add(item);
 
     return Results.Created($"/api/menu/{item.Id}", item);
@@ -49,7 +58,7 @@ app.MapPost("/api/menu", (MenuItem item) =>
 
 app.MapPut("/api/menu/{id}", (int id, MenuItem updatedItem) =>
 {
-    var item = menuItems.FirstOrDefault(x => x.Id == id);
+    MenuItem? item = menuItems.FirstOrDefault(x => x.Id == id);
 
     if (item == null)
     {
@@ -66,7 +75,7 @@ app.MapPut("/api/menu/{id}", (int id, MenuItem updatedItem) =>
 
 app.MapDelete("/api/menu/{id}", (int id) =>
 {
-    var item = menuItems.FirstOrDefault(x => x.Id == id);
+    MenuItem? item = menuItems.FirstOrDefault(x => x.Id == id);
 
     if (item == null)
     {
@@ -75,7 +84,7 @@ app.MapDelete("/api/menu/{id}", (int id) =>
 
     menuItems.Remove(item);
 
-    return Results.Ok();
+    return Results.NoContent();
 });
 
 app.Run();
@@ -91,4 +100,8 @@ public class MenuItem
     public decimal Price { get; set; }
 
     public bool IsAvailable { get; set; }
+}
+
+public partial class Program
+{
 }
