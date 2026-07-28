@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="FoodTrailerMenu.Api/FoodTrailerMenu.Api.csproj" />
-  <Project Path="FoodTrailerMenu.Console/FoodTrailerMenu.Console.csproj" />
-  <Project Path="FoodTrailerMenu.Tests/FoodTrailerMenu.Tests.csproj" />
-</Solution>
