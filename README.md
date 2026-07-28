@@ -1,20 +1,20 @@
 # Theo's Food Trailer Menu
 
-A .NET application built with **C#**, **ASP.NET Core Minimal API**, and a **Console client** that demonstrates REST API development, asynchronous programming, HTTP communication, and automated testing.
+A C# and .NET application that demonstrates building an ASP.NET Core Minimal API and creating a console client that communicates with the API using `HttpClient`.
 
-This project contains an ASP.NET Core API that manages food trailer menu data and a console application that consumes the API using `HttpClient`.
+This project demonstrates REST API development, asynchronous programming, automated testing, and communication between .NET applications.
 
 ---
 
 ## Features
 
 * RESTful API built with ASP.NET Core Minimal API
-* CRUD operations for menu items
-* Console application client that communicates with the API using `HttpClient`
+* Console application that consumes the API using `HttpClient`
 * Asynchronous programming with `async` and `await`
-* Integration testing with xUnit and WebApplicationFactory
+* Automated testing with xUnit
+* API integration testing with WebApplicationFactory
 * JSON-based menu data storage
-* API endpoint testing
+* CRUD operations for menu items
 
 ---
 
@@ -36,24 +36,30 @@ This project contains an ASP.NET Core API that manages food trailer menu data an
 ## Project Structure
 
 ```
-FoodTrailerMenu.Api/          # ASP.NET Core Web API
-FoodTrailerMenu.Console/      # Console application API client
-FoodTrailerMenu.Tests/        # Automated tests
-FoodTrailerMenu.slnx          # Solution file
-README.md
+FoodTrailerMenu.Api/
+    ASP.NET Core Web API responsible for managing menu data
+
+FoodTrailerMenu.Console/
+    Console application that sends HTTP requests to the API
+
+FoodTrailerMenu.Tests/
+    xUnit test project for validating API functionality
+
+FoodTrailerMenu.slnx
+    .NET solution file
 ```
 
 ---
 
 ## Getting Started
 
-### Clone the Repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/tabner0320/food-trailer-menu.git
 ```
 
-### Navigate to the Project
+### Navigate to the project
 
 ```bash
 cd food-trailer-menu
@@ -73,70 +79,70 @@ The API will start and listen on the configured localhost port.
 
 ---
 
-## Run the Console Client
+## Run the Console Application
 
-With the API running in another terminal:
+With the API running, open another terminal window and run:
 
 ```bash
 dotnet run --project FoodTrailerMenu.Console
 ```
 
-The console application sends HTTP requests to the API and displays menu information.
+The console application will send requests to the API and display the returned menu data.
 
 ---
 
 ## Run Tests
 
-Execute the automated test suite:
+Run the automated tests with:
 
 ```bash
 dotnet test
 ```
 
-Current Results:
-
-* ✅ 13 Tests Passed
-* ❌ 0 Failed
-* ⏭ 0 Skipped
+Test coverage includes validating API functionality and application behavior.
 
 ---
 
-## API Endpoints
+## API Communication
 
-| Method | Endpoint         | Description                  |
-| ------ | ---------------- | ---------------------------- |
-| GET    | `/api/menu`      | Retrieve all menu items      |
-| GET    | `/api/menu/{id}` | Retrieve a menu item by ID   |
-| POST   | `/api/menu`      | Create a new menu item       |
-| PUT    | `/api/menu/{id}` | Update an existing menu item |
-| DELETE | `/api/menu/{id}` | Delete a menu item           |
+The application flow:
+
+```
+FoodTrailerMenu.Console
+          |
+          | HTTP Requests (HttpClient)
+          ↓
+FoodTrailerMenu.Api
+          |
+          ↓
+Menu Data
+```
 
 ---
 
 ## Future Improvements
 
-* Database integration with SQL Server
-* Entity Framework Core implementation
-* User authentication and authorization
-* Admin management features
-* Docker containerization
-* Azure deployment
-* Enhanced API documentation with Swagger
+* Add SQL Server database integration
+* Implement Entity Framework Core
+* Add authentication and authorization
+* Create an administrative management interface
+* Add Docker support
+* Deploy API to Azure
 
 ---
 
 ## What I Learned
 
-Through this project, I gained experience with:
+Through this project I gained experience with:
 
 * Building RESTful APIs with ASP.NET Core
-* Creating and consuming HTTP endpoints
-* Implementing CRUD operations
-* Working with asynchronous programming
+* Creating Minimal APIs
 * Using HttpClient for API communication
+* Working with asynchronous programming
 * Writing automated tests with xUnit
-* Organizing .NET solutions
+* Understanding API request and response flow
 * Managing projects with Git and GitHub
+* Organizing .NET solutions
 
 ---
 
