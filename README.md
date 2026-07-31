@@ -13,8 +13,8 @@ This project demonstrates REST API development, asynchronous programming, automa
 * Asynchronous programming with `async` and `await`
 * Automated testing with xUnit
 * API integration testing with WebApplicationFactory
-* JSON-based menu data storage
-* CRUD operations for menu items
+* In-memory menu data storage
+* Full CRUD operations (Create, Read, Update, Delete) for menu items
 
 ---
 
@@ -37,16 +37,16 @@ This project demonstrates REST API development, asynchronous programming, automa
 
 ```
 FoodTrailerMenu.Api/
-    ASP.NET Core Web API responsible for managing menu data
+│   ASP.NET Core Minimal API
 
 FoodTrailerMenu.Console/
-    Console application that sends HTTP requests to the API
+│   Console application using HttpClient
 
 FoodTrailerMenu.Tests/
-    xUnit test project for validating API functionality
+│   xUnit integration tests
 
 FoodTrailerMenu.slnx
-    .NET solution file
+README.md
 ```
 
 ---
@@ -103,11 +103,25 @@ Test coverage includes validating API functionality and application behavior.
 
 ---
 
+## API Endpoints
+
+The API exposes the following endpoints for managing menu items:
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/menu` | Retrieve all menu items |
+| GET | `/api/menu/{id}` | Retrieve a menu item by ID |
+| POST | `/api/menu` | Add a new menu item |
+| PUT | `/api/menu/{id}` | Update an existing menu item |
+| DELETE | `/api/menu/{id}` | Delete a menu item |
+
+---
+
 ## API Communication
 
 The application flow:
 
-```
+```text
 FoodTrailerMenu.Console
           |
           | HTTP Requests (HttpClient)
@@ -150,6 +164,6 @@ Through this project I gained experience with:
 
 **Theophilus Abner**
 
-GitHub: https://github.com/tabner0320
+GitHub: <https://github.com/tabner0320>
 
-Repository: https://github.com/tabner0320/food-trailer-menu
+Repository: <https://github.com/tabner0320/food-trailer-menu>
