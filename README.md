@@ -147,7 +147,7 @@ Menu Data
 
 ## What I Learned
 
-Through this project I gained experience with:
+Throughout this project I gained experience with:
 
 * Building RESTful APIs with ASP.NET Core
 * Creating Minimal APIs
