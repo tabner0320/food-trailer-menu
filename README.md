@@ -102,7 +102,19 @@ dotnet test
 Test coverage includes validating API functionality and application behavior.
 
 ---
+## AI-Assisted Development
 
+AI tools were used as a learning aid during the development of the automated integration tests. AI-assisted suggestions helped me understand:
+
+- xUnit testing fundamentals
+- Integration testing with `WebApplicationFactory<Program>`
+- Using `HttpClient` to test API endpoints
+- Verifying HTTP status codes and JSON responses
+- Troubleshooting and refining test implementations
+
+All AI-generated suggestions were reviewed, tested, and modified by me to ensure they met the project requirements and that I understood how the code works. The final implementation reflects my understanding of ASP.NET Core integration testing and REST API behavior.
+
+---
 ## API Endpoints
 
 The API exposes the following endpoints for managing menu items:
