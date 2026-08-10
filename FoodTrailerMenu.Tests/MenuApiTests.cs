@@ -4,6 +4,14 @@ using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace FoodTrailerMenu.Tests;
 
+// -----------------------------------------------------------------------------
+// AI-Assisted Development
+//
+// Portions of this test file were developed with the assistance of OpenAI's
+// ChatGPT. The generated code was reviewed, tested, and modified by the
+// project author before being incorporated into this project.
+// -----------------------------------------------------------------------------
+
 public class MenuApiTests : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly HttpClient _client;
