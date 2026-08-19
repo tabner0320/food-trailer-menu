@@ -1,65 +1,206 @@
 # Theo's Food Trailer Menu
 
-A C# and .NET application that demonstrates building an ASP.NET Core Minimal API and creating a console client that communicates with the API using `HttpClient`.
+Theo's Food Trailer Menu is a full-stack application built with **C#, .NET, ASP.NET Core, HTML, CSS, and JavaScript**.
 
-This project demonstrates REST API development, asynchronous programming, automated testing, and communication between .NET applications.
+The project demonstrates how a frontend application can communicate with an ASP.NET Core REST API to retrieve and dynamically display menu data. It also includes a console client and automated integration testing.
+
+The application now features a custom splash screen and responsive web interface designed to provide a more polished user experience.
 
 ---
 
 ## Features
 
-* RESTful API built with ASP.NET Core Minimal API
-* Console application that consumes the API using `HttpClient`
-* Asynchronous programming with `async` and `await`
-* Automated testing with xUnit
-* API integration testing with WebApplicationFactory
-* In-memory menu data storage
-* Full CRUD operations (Create, Read, Update, Delete) for menu items
+- Custom Food Trailer splash screen
+- Responsive web interface
+- Dynamic menu rendering with JavaScript
+- ASP.NET Core Minimal API
+- RESTful API endpoints
+- Full CRUD operations
+- Console application that consumes the API using `HttpClient`
+- Asynchronous programming with `async` and `await`
+- JSON data communication
+- Automated testing with xUnit
+- API integration testing with `WebApplicationFactory`
+- Static file hosting through ASP.NET Core
+- Responsive menu cards
+- Menu category and availability display
+- Mobile-friendly design
 
 ---
 
 ## Technologies Used
 
-| Category        | Technology               |
-| --------------- | ------------------------ |
-| Language        | C#                       |
-| Framework       | .NET 10                  |
-| Backend         | ASP.NET Core Minimal API |
-| API Client      | HttpClient               |
-| Testing         | xUnit                    |
-| Data Format     | JSON                     |
-| Version Control | Git & GitHub             |
-| Editor          | Visual Studio Code       |
+| Category | Technology |
+| --- | --- |
+| Language | C# |
+| Framework | .NET 10 |
+| Backend | ASP.NET Core Minimal API |
+| Frontend | HTML5, CSS3, JavaScript |
+| API Client | HttpClient / Fetch API |
+| Testing | xUnit |
+| Integration Testing | WebApplicationFactory |
+| Data Format | JSON |
+| Version Control | Git & GitHub |
+| Development Environment | Visual Studio Code |
 
 ---
 
 ## Project Structure
 
+```text
+food-trailer-menu/
+│
+├── FoodTrailerMenu.Api/
+│   ├── Program.cs
+│   │
+│   └── wwwroot/
+│       ├── index.html
+│       │
+│       ├── css/
+│       │   └── style.css
+│       │
+│       ├── js/
+│       │   └── app.js
+│       │
+│       └── images/
+│           └── food-trailer-splash.png
+│
+├── FoodTrailerMenu.Console/
+│
+├── FoodTrailerMenu.Tests/
+│
+└── FoodTrailerMenu.slnx
 ```
-FoodTrailerMenu.Api/
-│   ASP.NET Core Minimal API
 
-FoodTrailerMenu.Console/
-│   Console application using HttpClient
+### FoodTrailerMenu.Api
 
-FoodTrailerMenu.Tests/
-│   xUnit integration tests
+Contains the ASP.NET Core Minimal API and web frontend.
 
-FoodTrailerMenu.slnx
-README.md
-```
+The API manages menu data and exposes REST endpoints that can be consumed by the browser or other applications.
+
+ASP.NET Core also serves the frontend files from the `wwwroot` directory.
+
+### FoodTrailerMenu.Console
+
+A C# console application that communicates with the API using `HttpClient`.
+
+This project demonstrates API consumption, asynchronous programming, and JSON deserialization.
+
+### FoodTrailerMenu.Tests
+
+Contains automated tests built with **xUnit** and **WebApplicationFactory**.
+
+The tests verify that the API behaves correctly and returns expected responses.
 
 ---
 
-## Getting Started
+## Application Flow
 
-### Clone the repository
+When the application starts, the user is presented with a custom Food Trailer splash screen.
+
+```text
+User Opens Website
+        ↓
+Food Trailer Splash Screen
+        ↓
+User Clicks "View Menu"
+        ↓
+JavaScript Sends GET Request
+        ↓
+GET /api/menu
+        ↓
+ASP.NET Core Minimal API
+        ↓
+Menu Data Returned as JSON
+        ↓
+JavaScript Dynamically Creates Menu Cards
+        ↓
+Menu Displayed in Browser
+```
+
+This demonstrates communication between the **presentation layer** and the **API layer** of the application.
+
+---
+
+## API Endpoints
+
+| HTTP Method | Endpoint | Description |
+| --- | --- | --- |
+| GET | `/api/menu` | Retrieve all menu items |
+| GET | `/api/menu/{id}` | Retrieve a menu item by ID |
+| POST | `/api/menu` | Create a new menu item |
+| PUT | `/api/menu/{id}` | Update an existing menu item |
+| DELETE | `/api/menu/{id}` | Delete a menu item |
+
+---
+
+## CRUD Operations
+
+The API demonstrates the four primary CRUD operations:
+
+| CRUD Operation | HTTP Method | Purpose |
+| --- | --- | --- |
+| Create | POST | Add a menu item |
+| Read | GET | Retrieve menu items |
+| Update | PUT | Modify a menu item |
+| Delete | DELETE | Remove a menu item |
+
+---
+
+## Frontend
+
+The frontend is located inside:
+
+```text
+FoodTrailerMenu.Api/wwwroot/
+```
+
+ASP.NET Core serves these files using:
+
+```csharp
+app.UseDefaultFiles();
+app.UseStaticFiles();
+```
+
+The frontend consists of:
+
+```text
+index.html
+css/style.css
+js/app.js
+images/food-trailer-splash.png
+```
+
+### Splash Screen
+
+When the website first opens, users are presented with a custom **Theo's Food Trailer** splash screen.
+
+Selecting **View Menu** hides the splash screen and opens the main application.
+
+### Dynamic Menu
+
+JavaScript retrieves menu data from the API:
+
+```javascript
+const response = await fetch("/api/menu");
+const menuItems = await response.json();
+```
+
+The returned JSON data is then used to dynamically generate menu cards in the browser.
+
+This means the menu displayed on the website comes directly from the ASP.NET Core API instead of being hard-coded into the HTML.
+
+---
+
+## Running the Application
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/tabner0320/food-trailer-menu.git
 ```
 
-### Navigate to the project
+Move into the project:
 
 ```bash
 cd food-trailer-menu
@@ -67,115 +208,130 @@ cd food-trailer-menu
 
 ---
 
-## Run the API
+## Run the API and Website
 
-Start the ASP.NET Core API:
+From the project root:
 
 ```bash
 dotnet run --project FoodTrailerMenu.Api
 ```
 
-The API will start and listen on the configured localhost port.
+The terminal will display the local URL for the application.
+
+For example:
+
+```text
+http://localhost:5041
+```
+
+Open the URL in your browser.
+
+You should first see the **Theo's Food Trailer splash screen**.
+
+Click:
+
+```text
+VIEW MENU
+```
+
+to enter the application.
 
 ---
 
 ## Run the Console Application
 
-With the API running, open another terminal window and run:
+With the API running, open another terminal and run:
 
 ```bash
 dotnet run --project FoodTrailerMenu.Console
 ```
 
-The console application will send requests to the API and display the returned menu data.
+The console application communicates with the Food Trailer API using `HttpClient`.
 
 ---
 
-## Run Tests
+## Run the Tests
 
-Run the automated tests with:
+From the solution directory:
 
 ```bash
 dotnet test
 ```
 
-Test coverage includes validating API functionality and application behavior.
-
----
-## AI-Assisted Development
-
-AI tools were used as a learning aid during the development of the automated integration tests. AI-assisted suggestions helped me understand:
-
-- xUnit testing fundamentals
-- Integration testing with `WebApplicationFactory<Program>`
-- Using `HttpClient` to test API endpoints
-- Verifying HTTP status codes and JSON responses
-- Troubleshooting and refining test implementations
-
-All AI-generated suggestions were reviewed, tested, and modified by me to ensure they met the project requirements and that I understood how the code works. The final implementation reflects my understanding of ASP.NET Core integration testing and REST API behavior.
-
----
-## API Endpoints
-
-The API exposes the following endpoints for managing menu items:
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/menu` | Retrieve all menu items |
-| GET | `/api/menu/{id}` | Retrieve a menu item by ID |
-| POST | `/api/menu` | Add a new menu item |
-| PUT | `/api/menu/{id}` | Update an existing menu item |
-| DELETE | `/api/menu/{id}` | Delete a menu item |
-
----
-
-## API Communication
-
-The application flow:
+Current test result:
 
 ```text
-FoodTrailerMenu.Console
-          |
-          | HTTP Requests (HttpClient)
-          ↓
-FoodTrailerMenu.Api
-          |
-          ↓
-Menu Data
+Total tests: 13
+Passed: 13
+Failed: 0
+Skipped: 0
 ```
 
 ---
 
-## Future Improvements
+## Build the Solution
 
-* Add SQL Server database integration
-* Implement Entity Framework Core
-* Add authentication and authorization
-* Create an administrative management interface
-* Add Docker support
-* Deploy API to Azure
+Run:
+
+```bash
+dotnet build
+```
+
+This builds the API, console application, and test project.
 
 ---
 
 ## What I Learned
 
-Throughout this project I gained experience with:
+Building Theo's Food Trailer Menu gave me hands-on experience with:
 
-* Building RESTful APIs with ASP.NET Core
-* Creating Minimal APIs
-* Using HttpClient for API communication
-* Working with asynchronous programming
-* Writing automated tests with xUnit
-* Understanding API request and response flow
-* Managing projects with Git and GitHub
-* Organizing .NET solutions
+- Building REST APIs with ASP.NET Core Minimal API
+- Implementing CRUD operations
+- Working with HTTP methods
+- Using `HttpClient`
+- Working with JavaScript `fetch()`
+- Sending and receiving JSON data
+- Connecting a frontend to a backend API
+- Dynamically rendering API data in the browser
+- Serving static frontend files with ASP.NET Core
+- Using asynchronous programming with `async` and `await`
+- Writing automated tests with xUnit
+- Performing API integration testing
+- Debugging frontend and backend communication
+- Organizing a multi-project .NET solution
+- Using Git and GitHub for version control
+- Designing a responsive web interface
+
+---
+
+## Future Improvements
+
+Possible future improvements include:
+
+- Persistent database storage
+- Administrator interface for managing menu items
+- Customer ordering functionality
+- Shopping cart
+- Menu item images
+- Additional menu categories
+- Authentication and authorization
+- Cloud deployment with Microsoft Azure
+- Expanded unit and integration test coverage
 
 ---
 
 ## Author
 
-**Theophilus Abner**
+**Theophilus M. Abner Jr.**
 
-GitHub: <https://github.com/tabner0320>
+Software Developer | C# | .NET | ASP.NET Core | JavaScript
 
-Repository: <https://github.com/tabner0320/food-trailer-menu>
+GitHub: `tabner0320`
+
+---
+
+## Project Purpose
+
+This project was created as part of my continued software development training and portfolio development.
+
+It demonstrates practical experience building and connecting multiple parts of a modern application, including a **web frontend, REST API, console client, and automated test project**.
