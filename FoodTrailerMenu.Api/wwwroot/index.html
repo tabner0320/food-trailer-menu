@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Theo's Food Trailer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SPLASH SCREEN
+    ========================== -->
+    <section id="welcomeScreen" class="welcome-screen">
+
+        <div class="welcome-overlay"></div>
+
+        <div class="welcome-content">
+            <p class="eyebrow">WELCOME TO</p>
+
+            <h1>Theo's Food Trailer</h1>
+
+            <p class="welcome-tagline">
+                Fresh Food • Great Flavor • Made to Order
+            </p>
+
+            <button id="enterMenuButton" class="primary-button">
+                View Menu
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN SITE
+    ========================== -->
+    <div id="websiteContent" class="hidden">
+
+        <header class="site-header">
+
+            <div class="brand">
+                <h2>Theo's Food Trailer</h2>
+
+                <p>
+                    Fresh Food. Great Flavor. Made to Order.
+                </p>
+            </div>
+
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <!-- HERO -->
+            <section class="hero">
+
+                <div class="hero-content">
+                    <p class="eyebrow">MADE FRESH</p>
+
+                    <h1>Food Worth Pulling Over For</h1>
+
+                    <p>
+                        Browse our menu and see what is available today.
+                    </p>
+
+                    <a href="#menu" class="primary-button">
+                        Explore Menu
+                    </a>
+                </div>
+
+            </section>
+
+
+            <!-- MENU -->
+            <section id="menu" class="menu-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">OUR MENU</p>
+
+                    <h2>Fresh Favorites</h2>
+
+                    <p>
+                        Menu items are loaded directly from the
+                        ASP.NET Core API.
+                    </p>
+                </div>
+
+                <div id="menuContainer" class="menu-grid">
+                    <p>Loading menu...</p>
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            <p>
+                © 2026 Theo's Food Trailer
+            </p>
+
+            <p>
+                Built with C#, ASP.NET Core, JavaScript, HTML, and CSS
+            </p>
+        </footer>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

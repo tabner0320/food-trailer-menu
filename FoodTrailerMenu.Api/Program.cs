@@ -2,6 +2,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
+// Serve index.html and other files from wwwroot
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 List<MenuItem> menuItems = new()
 {
     new MenuItem
